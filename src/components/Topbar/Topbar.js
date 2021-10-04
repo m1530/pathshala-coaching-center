@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faTwitterSquare, faGooglePlusG } from '@fortawesome/free-brands-svg-icons'
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
@@ -16,8 +17,15 @@ const Topbar = () => {
                     <Col md={4}></Col>
                     <Col md={4} className="d-flex justify-content-end  align-items-center">
                         <small className="me-4">
-                            <FontAwesomeIcon icon={faFacebook} />
-                            facebook
+                            <NavLink to="/facebook" target="_blank" className="p-1 text-white">
+                                <FontAwesomeIcon icon={faFacebookF} />
+                            </NavLink>
+                            <NavLink to="/twitter" target="_blank" className="p-1 text-white">
+                                <FontAwesomeIcon icon={faTwitterSquare} />
+                            </NavLink>
+                            <NavLink to="/google" target="_blank" className="p-1 text-white">
+                                <FontAwesomeIcon icon={faGooglePlusG} />
+                            </NavLink>
                         </small>
                         <small>
                             <NavLink
@@ -32,7 +40,7 @@ const Topbar = () => {
                                     textDecoration: 'none',
                                 }}
                             >
-                                Login
+                                <FontAwesomeIcon icon={faUser} /><span className="ms-1">Login</span>
                             </NavLink>
                         </small>
                     </Col>

@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "PCC PEC Final-2021",
+        "img": "https://i.im.ge/2021/10/04/Tv5gxF.jpg",
+        "price": 8000,
+        "duration": "6 month",
+        "subjects": "All Subjects"
+    },
+    {
+        "id": 2,
+        "name": "PCC JSC Exam-2021",
+        "img": "https://i.im.ge/2021/10/04/Tv5bMz.jpg",
+        "price": 10000,
+        "duration": "6 month",
+        "subjects": "Generel Science, Math, English"
+    },
+    {
+        "id": 3,
+        "name": "PCC SSC Preparation",
+        "img": "https://i.im.ge/2021/10/04/Tv5Kf8.jpg",
+        "price": 12000,
+        "duration": "6 month",
+        "subjects": "Physics, Chemistry, Higher Math, Math, English"
+    },
+    {
+        "id": 4,
+        "name": "PCC HSC Preparation",
+        "img": "https://i.im.ge/2021/10/04/Tv5cI6.jpg",
+        "price": 12000,
+        "duration": "6 month",
+        "subjects": "Physics, Chemistry, Higher Math, English"
+    },
+    {
+        "id": 5,
+        "name": "Basic Computer",
+        "img": "https://i.im.ge/2021/10/04/Tv538S.jpg",
+        "price": 6000,
+        "duration": "4 month",
+        "subjects": "MS Word, MS Power Point, MS Excel"
+    },
+    {
+        "id": 6,
+        "name": "Spoken English",
+        "img": "https://i.im.ge/2021/10/04/Tv5ZPX.jpg",
+        "price": 8000,
+        "duration": "4 month",
+        "subjects": "English Vocabulary"
+    },
+    {
+        "id": 7,
+        "name": "Graphics Design",
+        "img": "https://i.im.ge/2021/10/04/Tv58JK.jpg",
+        "price": 12000,
+        "duration": "3.5 month",
+        "subjects": "Photoshop, illustrator"
+    },
+    {
+        "id": 8,
+        "name": "SSC Special",
+        "img": "https://i.im.ge/2021/10/04/Tv5Wd9.jpg",
+        "price": 18000,
+        "duration": "6 month",
+        "subjects": "All Subjects"
+    }
+]

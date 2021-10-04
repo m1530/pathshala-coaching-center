@@ -6,7 +6,15 @@ const Header = () => {
     return (
         <Navbar bg="dark" variant="dark">
             <Container className="p-1">
-                <Navbar.Brand href="#home">Pathshala coaching centere</Navbar.Brand>
+                <Navbar.Brand>
+                    <NavLink style={{
+                        marginRight: '20px',
+                        color: "white",
+                        textDecoration: 'none',
+                    }} to="/">
+                        Pathshala coaching center
+                    </NavLink>
+                </Navbar.Brand>
                 <Nav className="ms-auto">
                     <NavLink
                         style={{

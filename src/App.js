@@ -9,6 +9,7 @@ import Services from './components/Services/Services';
 import NotFound from './components/NotFound/NotFound';
 import Topbar from './components/Topbar/Topbar';
 import Login from './components/Login/Login';
+import Service from './components/Service/Service';
 
 function App() {
   return (
@@ -32,6 +33,27 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
+          <Route
+            path="/facebook"
+            component={() => {
+              global.window && (global.window.location.href = 'https://www.facebook.com');
+              return null;
+            }}
+          />
+          <Route
+            path="/twitter"
+            component={() => {
+              global.window && (global.window.location.href = 'https://www.twitter.com');
+              return null;
+            }}
+          />
+          <Route
+            path="/google"
+            component={() => {
+              global.window && (global.window.location.href = 'https://www.google.com');
+              return null;
+            }}
+          />
           <Route path="*">
             <NotFound></NotFound>
           </Route>

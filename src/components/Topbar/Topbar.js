@@ -11,12 +11,15 @@ const Topbar = () => {
         <div className="bg-primary text-white">
             <Container className="p-1">
                 <Row>
+                    {/* topbar date time */}
                     <Col md={4} className="d-flex justify-content-start align-items-center">
                         <small>Day: {date.getDate()}/{date.getMonth() + 1}/{date.getFullYear()} Time: {date.getHours()}:{date.getMinutes()}:{date.getSeconds()}</small>
                     </Col>
                     <Col md={4}></Col>
+
                     <Col md={4} className="d-flex justify-content-end  align-items-center">
                         <small className="me-4">
+                            {/* topbar social icon using react fontawesome and link external website */}
                             <NavLink to="/facebook" target="_blank" className="p-1 text-white">
                                 <FontAwesomeIcon icon={faFacebookF} />
                             </NavLink>
@@ -28,6 +31,7 @@ const Topbar = () => {
                             </NavLink>
                         </small>
                         <small>
+                            {/* login option in topbar */}
                             <NavLink
                                 style={{
                                     color: "white",

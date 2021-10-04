@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 const useServices = () => {
+    // fetch all services form services json file
     const [services, setServices] = useState([]);
     //console.log(products)
     useEffect(() => {

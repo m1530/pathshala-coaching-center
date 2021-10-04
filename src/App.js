@@ -9,12 +9,13 @@ import Services from './components/Services/Services';
 import NotFound from './components/NotFound/NotFound';
 import Topbar from './components/Topbar/Topbar';
 import Login from './components/Login/Login';
-import Service from './components/Service/Service';
+import AllNews from './components/AllNews/AllNews';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        {/* fixed topbar and header in all pages */}
         <Topbar></Topbar>
         <Header></Header>
         <Switch>
@@ -30,9 +31,13 @@ function App() {
           <Route path="/service">
             <Services></Services>
           </Route>
+          <Route path="/news">
+            <AllNews></AllNews>
+          </Route>
           <Route path="/login">
             <Login></Login>
           </Route>
+          {/* top bar icon route for external link */}
           <Route
             path="/facebook"
             component={() => {
@@ -58,6 +63,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        {/* fixed fotter all pages */}
         <Footer></Footer>
       </Router>
     </div>

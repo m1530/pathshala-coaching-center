@@ -9,6 +9,7 @@ const About = () => {
                 <h2 className="my-5">About US</h2>
                 <Row className="justify-content-center align-items-center mb-5 g-4">
                     <Col md={6} className="text-start fw-normal">
+                        {/* descrive some thing in about page */}
                         <p>Pathshala coaching ccenter is a famous coaching center in kasba.  We provide education counseling for classes 1 to 12 since 2017. We also offer basic computer courses. We are the best coaching for PSC, JSC, SSC, HSC.
                         </p>
                         <p>
@@ -28,6 +29,7 @@ const About = () => {
                         </p>
                     </Col>
                     <Col md={6}>
+                        {/* about us page image */}
                         <div>
                             <img className="w-75" src={aboutImg} alt="" />
                         </div>

@@ -1,0 +1,9 @@
+/* notfound container background color set */
+.notfound-container{
+background-color: rgb(228, 216, 216);
+}
+/* font style design */
+.font-color{
+    font-size: 120px;
+    color: #0726c0;
+}

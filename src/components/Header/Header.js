@@ -7,6 +7,7 @@ const Header = () => {
         <Navbar bg="dark" variant="dark">
             <Container className="p-1">
                 <Navbar.Brand>
+                    {/* navlink for site name */}
                     <NavLink style={{
                         marginRight: '20px',
                         color: "white",
@@ -16,6 +17,7 @@ const Header = () => {
                     </NavLink>
                 </Navbar.Brand>
                 <Nav className="ms-auto">
+                    {/* nav link for home routw */}
                     <NavLink
                         style={{
                             marginRight: '20px',
@@ -31,6 +33,7 @@ const Header = () => {
                     >
                         Home
                     </NavLink>
+                    {/* link for about page */}
                     <NavLink
                         style={{
                             marginRight: '20px',
@@ -46,6 +49,7 @@ const Header = () => {
                     >
                         About
                     </NavLink>
+                    {/* link for all services */}
                     <NavLink
                         style={{
                             marginRight: '20px',
@@ -61,19 +65,20 @@ const Header = () => {
                     >
                         Services
                     </NavLink>
+                    {/* link for all news */}
                     <NavLink
                         style={{
                             color: "white",
                             textDecoration: 'none',
                         }}
-                        to="/blog"
+                        to="/news"
                         activeStyle={{
                             fontWeight: "bold",
                             color: "red",
                             textDecoration: 'none',
                         }}
                     >
-                        Home
+                        News
                     </NavLink>
                 </Nav>
             </Container>

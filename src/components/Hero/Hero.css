@@ -1,0 +1,14 @@
+/* hero secton bacground design */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 510px;
+  /* border: 1px solid red; */
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+/* design hero section title */
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 54px;
+}

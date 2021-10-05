@@ -1,12 +1,12 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import aboutImg from '../../images/about-us.png';
+import aboutImg from '../../images/about-us.jpg';
 
 const About = () => {
     return (
         <div>
             <Container>
-                <h2 className="my-5">About US</h2>
+                <h1 className="my-5">About US</h1>
                 <Row className="justify-content-center align-items-center mb-5 g-4">
                     <Col md={6} className="text-start fw-normal">
                         {/* descrive some thing in about page */}
@@ -31,7 +31,7 @@ const About = () => {
                     <Col md={6}>
                         {/* about us page image */}
                         <div>
-                            <img className="w-75" src={aboutImg} alt="" />
+                            <img className="img-fluid rounded" src={aboutImg} alt="" />
                         </div>
                     </Col>
                 </Row>

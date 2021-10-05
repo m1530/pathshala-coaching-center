@@ -1,9 +1,11 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Container } from 'react-bootstrap';
-import useServices from '../Hooks/FetchServices';
+import { userContext } from '../../App';
+// import useServices from '../Hooks/FetchServices';
 
 const Services = () => {
-    const [services] = useServices([]);
+    const [services] = useContext(userContext);
     return (
         <div>
             <Container>

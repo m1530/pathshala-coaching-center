@@ -1,7 +1,7 @@
 /* hero secton bacground design */
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  height: 510px;
+ 
   /* border: 1px solid red; */
   background-blend-mode: overlay;
   background-size: cover;
@@ -10,5 +10,8 @@
 .title {
   color: white;
   font-weight: bold;
-  font-size: 54px;
+  font-size: 44px;
+}
+.img-height{
+  max-height: 450px;
 }

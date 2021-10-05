@@ -5,10 +5,10 @@ import heroImg from '../../images/eight-math.jpg';
 
 const Hero = () => {
     return (
-        <div className="hero-section">
-            <div className="">
-                <div className="row d-flex hero align-items-center justify-content-center">
-                    <div className="col-md-6">
+        <div className="hero">
+            <div className="container">
+                <div className="row align-items-center justify-content-center py-4">
+                    <div className="col-md-7">
                         {/* hero section title */}
                         <h1 className="title">
                             Special Session Comming For <br /> Class 8 Math
@@ -34,8 +34,8 @@ const Hero = () => {
                         </NavLink>
                     </div>
                     {/* hero section image */}
-                    <div className="col-md-5">
-                        <img src={heroImg} className="rounded" height="420px" width="400px" alt="" />
+                    <div className="col-md-5 my-2 sm-1">
+                        <img src={heroImg} className="img-fluid rounded img-height" alt="" />
                     </div>
                 </div>
             </div>

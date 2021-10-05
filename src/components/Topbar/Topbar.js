@@ -9,15 +9,14 @@ const Topbar = () => {
     const date = new Date();
     return (
         <div className="bg-primary text-white">
-            <Container className="p-1">
-                <Row>
+            <Container>
+                <Row className="align-items-center">
                     {/* topbar date time */}
-                    <Col md={4} className="d-flex justify-content-start align-items-center">
+                    <Col md={6} className="text-md-start">
                         <small>Day: {date.getDate()}/{date.getMonth() + 1}/{date.getFullYear()} Time: {date.getHours()}:{date.getMinutes()}:{date.getSeconds()}</small>
                     </Col>
-                    <Col md={4}></Col>
 
-                    <Col md={4} className="d-flex justify-content-end  align-items-center">
+                    <Col md={6} className="text-md-end align-items-center">
                         <small className="me-4">
                             {/* topbar social icon using react fontawesome and link external website */}
                             <NavLink to="/facebook" target="_blank" className="p-1 text-white">

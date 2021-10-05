@@ -1,9 +1,12 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Container } from 'react-bootstrap';
-import useNews from '../Hooks/FetchNews';
+import { userContext } from '../../App';
+// import useNews from '../Hooks/FetchNews';
 
 const AllNews = () => {
-    const [news] = useNews();
+    //const [news] = useNews();
+    const [news] = useContext(userContext);
     return (
         <div>
             {/* load all news in ui */}

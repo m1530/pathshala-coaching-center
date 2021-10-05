@@ -14,6 +14,7 @@ import { createContext } from 'react';
 import useNews from './components/Hooks/FetchNews';
 import useServices from './components/Hooks/FetchServices';
 
+// create context api
 export const userContext = createContext();
 function App() {
 

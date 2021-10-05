@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div>
             <Container>
-                <h1 className="my-5">About US</h1>
+                <h1 className="my-5 text-danger fw-bold">About US</h1>
                 <Row className="justify-content-center align-items-center mb-5 g-4">
                     <Col md={6} className="text-start fw-normal">
                         {/* descrive some thing in about page */}
@@ -28,7 +28,7 @@ const About = () => {
                             To make the minds of the students happy, we give merit scholarships to the top 3 students of each batch. And we organize different cultural events.
                         </p>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className="order-first order-md-last">
                         {/* about us page image */}
                         <div>
                             <img className="img-fluid rounded" src={aboutImg} alt="" />

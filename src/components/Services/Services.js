@@ -2,10 +2,10 @@ import React from 'react';
 import { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import { userContext } from '../../App';
-// import useServices from '../Hooks/FetchServices';
 
 const Services = () => {
-    const [services] = useContext(userContext);
+    const [news, services] = useContext(userContext);
+    console.log(news)
     return (
         <div>
             <Container>
@@ -14,13 +14,12 @@ const Services = () => {
                 <div className="row g-4 mb-5">
                     {services?.map((service) => (
                         <div className="col-md-4" key={service.id}>
-                            <div className="border p-4 h-100 shadow-lg">
-                                <div>
-                                    <img className="w-75 rounded" height="250px" src={service.img} alt="" />
-                                </div>
-                                <div className="mt-3">
-                                    <h4>{service.name}</h4>
-                                    <p>Price: {service.price}</p>
+                            <div className="card h-100 shadow-lg">
+                                {/* service image */}
+                                <img src={service.img} className="card-img-top p-2" height="250px" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title fw-bold">{service.name}</h5>
+                                    <p className="card-text">Price: {service.price}</p>
                                 </div>
                             </div>
                         </div>

@@ -4,30 +4,26 @@ import { Container } from 'react-bootstrap';
 import { userContext } from '../../App';
 import About from '../About/About';
 import Hero from '../Hero/Hero';
-// import useNews from '../Hooks/FetchNews';
-// import useServices from '../Hooks/FetchServices';
 import News from '../News/News';
 import Service from '../Service/Service';
 
 const Home = () => {
-    // const [services] = useServices();
-    // const [news] = useNews();
-
+    // fetch data using context api
     const [news, services] = useContext(userContext);
 
     return (
         <div>
             <Hero />
             <Container>
-                <h1 className="my-5">Pathshala Coaching News</h1>
-                <div className="row g-3 my-4">
+                <h1 className="mt-5 text-danger fw-bold">Pathshala Coaching News</h1>
+                <div className="row g-5 my-4">
                     {
                         // data pass by props and use slice to show only 3 news
                         news.slice(0, 3).map(newses => <News key={newses.id} news={newses}></News>)
                     }
                 </div>
 
-                <h1 className="my-5">Our Services</h1>
+                <h1 className="my-5 text-danger fw-bold">Our Services</h1>
                 <div className="row g-3 my-4">
                     {
                         // data pass by props and use slice to show only 4 services

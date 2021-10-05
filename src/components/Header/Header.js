@@ -7,6 +7,7 @@ const Header = () => {
         <Navbar bg="dark" expand="lg" variant="dark" className="px-3">
             <Container>
                 <Navbar.Brand>
+                    {/* website title */}
                     <NavLink style={{
                         marginRight: '20px',
                         color: "white",

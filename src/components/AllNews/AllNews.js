@@ -5,24 +5,23 @@ import { userContext } from '../../App';
 // import useNews from '../Hooks/FetchNews';
 
 const AllNews = () => {
-    //const [news] = useNews();
-    const [news] = useContext(userContext);
+    //fetch data using context api
+    const [news, services] = useContext(userContext);
+    console.log(services)
     return (
         <div>
             {/* load all news in ui */}
             <Container>
-                <h1 className="my-5">All News</h1>
-                <div className="row g-4 mb-5">
+                <h1 className="my-5 text-danger fw-bold">All News</h1>
+                <div className="row row-cols-1 row-cols-md-3 g-4 mb-5">
                     {news?.map((news) => (
-                        <div className="col-md-4" key={news.id}>
-                            <div className="border p-4 h-100 shadow-lg">
-                                <div>
-                                    <img className="w-75 rounded" height="250px" src={news.img} alt="" />
-                                </div>
-                                <div className="mt-3">
-                                    <h4>{news.title}</h4>
+                        <div className="col" key={news.id}>
+                            <div className="card h-100 shadow-lg">
+                                <img src={news.img} className="card-img-top" height="200px" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title fw-bold">{news.title}</h5>
                                     {/* slice description text */}
-                                    <p>Description: {news.description?.slice(0, 80)}</p>
+                                    <p className="card-text">Description: {news.description}</p>
                                 </div>
                             </div>
                         </div>

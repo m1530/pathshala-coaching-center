@@ -1,7 +1,6 @@
 /* hero secton bacground design */
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
- 
   /* border: 1px solid red; */
   background-blend-mode: overlay;
   background-size: cover;

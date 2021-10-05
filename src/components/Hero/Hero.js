@@ -34,7 +34,7 @@ const Hero = () => {
                         </NavLink>
                     </div>
                     {/* hero section image */}
-                    <div className="col-md-5 my-2 sm-1">
+                    <div className="col-md-5 my-2 sm-1 order-first order-md-last">
                         <img src={heroImg} className="img-fluid rounded img-height" alt="" />
                     </div>
                 </div>

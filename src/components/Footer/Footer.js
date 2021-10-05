@@ -9,11 +9,11 @@ const Footer = () => {
         <>
             <div className="text-white bg-dark px-1 py-4">
                 <Container>
-                    <div className="row text-start">
+                    <div className="row text-center text-md-start">
                         <div className="col-md-3">
-                            {/* show all navling in footeras menu */}
+                            {/* show all navlink in footer as quick link */}
                             <h4 className="my-4">QUICK LINKS</h4>
-                            <div>
+                            <div className="ms-2">
                                 <NavLink
                                     style={{
                                         marginRight: '20px',
@@ -49,12 +49,13 @@ const Footer = () => {
                                 <br />
                                 <NavLink
                                     style={{
+                                        marginRight: '20px',
                                         color: "white",
                                         textDecoration: 'none',
                                     }}
-                                    to="/blog"
+                                    to="/news"
                                 >
-                                    Home
+                                    News
                                 </NavLink>
                             </div>
                         </div>
